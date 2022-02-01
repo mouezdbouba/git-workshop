@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fn">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
     <title>Document</title>
 </head>
 <body>
-   <p>
-       Lorem ipsum dolor, sit amet consectetur 
-       adipisicing elit. Itaque nam temporibus natus asperiores repellat officiis velit harum
-       . Veritatis possimus
-        autem hic, saepe consequuntur,
-         impedit tempore sint sapiente fuga temporibus voluptatum.
-   </p> 
+   <div id="app">
+       {{message}}
+   </div>
 </body>
+<script>
+    vue.createApp({
+        data(){
+            return 
+            {
+                message:"hello"
+            }
+        }
+    }).mount("#app")
+</script>
 </html>
